@@ -3,7 +3,7 @@ Greenbootcamps Final Project
 
 ## Settings
 ````
-pyenv local 3.XX.XX
+pyenv local 3.12.2
 
 python -m venv .venv
 source .venv/bin/activate
