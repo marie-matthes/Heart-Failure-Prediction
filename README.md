@@ -2,28 +2,12 @@
 Greenbootcamps Final Project
 
 ## About the Data Set
+* Using Dataset: 1025_heart_disease_dataset.csv
+
 ### Columns
-
-| ID 	| Name 	| Description 	|
-|----	|------	|-------------	|
-| 1.    |age    |               |
-| 2.   	|sex  	|             	|
-| 3.   	|cp   	|             	|
-| 4.   	|trtbps |             	|
-| 5.   	|chol   |             	|
-| 6.   	|fbs  	|             	|
-| 7.   	|restecg|             	|
-| 8.   	|thalachh|             	|
-| 9.   	|exng   |             	|
-| 10.  	|oldpeak|             	|
-| 11.  	|slp    |             	|
-| 12.  	|caa    |             	|
-| 13.  	|thall  |             	|
-| 14.  	|output |             	|
-
 ### Rows
-* 304 rows
-* No missing values at first sight
+* 1025 rows
+* No NaNs detected at first sight
 
 ## Settings
 ````
