@@ -2,12 +2,7 @@
 Greenbootcamps Final Project
 
 ## About the Data Set
-* Using Dataset: 1025_heart_disease_dataset.csv
-
-### Columns
-### Rows
-* 1025 rows
-* No NaNs detected at first sight
+tba
 
 ## Settings
 ````
@@ -19,3 +14,6 @@ source .venv/bin/activate
 pip install —upgrade pip
 pip install -r requirements 
 ````
+
+## Further Resources:
+* [Google Slides (wip)](https://docs.google.com/presentation/d/1uMFEZdCA6hIJjV67vovKkaMjGuhj_OPVMb3OzyiL16A/edit?usp=sharing)
