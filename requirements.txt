@@ -4,3 +4,5 @@ pandas
 seaborn
 scikit-learn
 matplotlib
+streamlit
+plotly
