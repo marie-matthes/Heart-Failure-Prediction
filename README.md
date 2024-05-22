@@ -37,3 +37,4 @@ pip install -r requirements.txt
 
 ## Further Resources:
 * [Google Slides (wip)](https://docs.google.com/presentation/d/1uMFEZdCA6hIJjV67vovKkaMjGuhj_OPVMb3OzyiL16A/edit?usp=sharing)
+* [Streamlit App: Heart Failure Classifier](https://please-dont-go-breaking-my-heart.streamlit.app/)
