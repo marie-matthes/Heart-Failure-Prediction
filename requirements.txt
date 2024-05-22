@@ -5,4 +5,6 @@ seaborn
 scikit-learn
 matplotlib
 streamlit
+pydot
+xgboost
 plotly
