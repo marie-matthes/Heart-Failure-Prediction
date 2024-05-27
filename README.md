@@ -1,4 +1,4 @@
-# Heart-Attack-Analysis
+# Heart Failure Analysis & Prediction
 Greenbootcamps Final Project
 
 ## About the Data Set
@@ -36,5 +36,5 @@ pip install -r requirements.txt
 ````
 
 ## Further Resources:
-* [Google Slides (wip)](https://docs.google.com/presentation/d/1uMFEZdCA6hIJjV67vovKkaMjGuhj_OPVMb3OzyiL16A/edit?usp=sharing)
+* [Final Presenatation](https://drive.google.com/file/d/1qQD9iv8uvoN-lx0Tpivh1KybbYwhJJgT/view?usp=sharing)
 * [Streamlit App: Heart Failure Classifier](https://please-dont-go-breaking-my-heart.streamlit.app/)
