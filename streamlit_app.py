@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle
 import numpy as np
+import pandas as pd
+import plotly.express as px
+
 
 
 model = pickle.load(open('trained_pipeline-0.1.2.pkl','rb'))
@@ -20,11 +23,17 @@ def predict_heartdisease(ST_Slope_Flat, ST_Slope_Up, ST_Slope_Down,
 def main():
     st.title("Heart Failure Classifier")
     """__Authors__: M. Matthes, Z. Daniali""" 
-    """[contact](mmatthes@greenbootcamps.com) | [corresponding gitHub repo](https://github.com/marie-matthes/Heart-Disease-Classifier) \
+    """[contact](mmatthes@greenbootcamps.com) | [corresponding GitHub repo](https://github.com/marie-matthes/Heart-Failure-Classifier) \
     """
     """ __Goal__ :  As a health insurance company, you want to find out whether testing a patient for heart disease is necessary or not."""
     """ __Dataset__ : The Logistic Regression Model was trained on the [Heart Failure Prediction Dataset from Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)"""
     """* * *"""
+
+    # Sidebar with input field descriptions
+    st.sidebar.header("Description of required input fields")
+    st.sidebar.markdown("**ST Slope**: Pattern of ST-segment changes during peak exercise compared to baseline: Up, Flat or Down")
+    st.sidebar.markdown("**Chest Pain Type**: TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic")
+    st.sidebar.markdown("**Fasting Blood Sugar**: 1: if FastingBS > 120 mg/dl, 0: otherwise")
 
     ST_Slope_option = st.selectbox(
         "Select slope of the peak exercise ST segment of the patient",
@@ -94,6 +103,42 @@ def main():
             st.success("Patient won't likely develop Heart Disease (80% Accuracy)")
         
         st.write("Overall Model Accuracy: 85%")
+    
+    st.write("")
+    row_space1, row_1, row_space2, row_2, row_space3 = st.columns(
+        (0.1, 1, 0.1, 1, 0.1)
+    )
+    
+    df = pd.read_csv('./data/918_heart_failure_dataset.csv')
+
+    with row_1:
+        st.subheader("ST Slope")
+        fig = px.histogram(
+            df,
+            x='ST_Slope',
+            color='HeartDisease',
+            color_discrete_sequence=['#9EE6CF', '#4D7267'],
+            barmode='group'
+        )
+        st.plotly_chart(fig, theme="streamlit", use_container_width=True)
+        st.markdown(
+            f"The plot above shows the distribution of ST Slope in the dataset that was used for training the model"
+        )
+
+
+    with row_2:
+        st.subheader("Chest Pain Type")
+        fig = px.histogram(
+            df,
+            x='ChestPainType',
+            color='HeartDisease',
+            color_discrete_sequence=['#9EE6CF', '#4D7267'],
+            barmode='group'
+        )
+        st.plotly_chart(fig, theme="streamlit", use_container_width=True)
+        st.markdown(
+            f"The plot above shows the distribution of Chestpain Type in the dataset that was used for training the model"
+        )
 
 if __name__=='__main__':
     main()
