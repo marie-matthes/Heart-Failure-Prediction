@@ -38,3 +38,4 @@ pip install -r requirements.txt
 ## Further Resources:
 * [Slides: Final Presenatation (PDF)](https://drive.google.com/file/d/1qQD9iv8uvoN-lx0Tpivh1KybbYwhJJgT/view?usp=sharing)
 * [Streamlit App: Heart Failure Classifier](https://please-dont-go-breaking-my-heart.streamlit.app/)
+* [Tableau Dashboard: Heart Failure Dataset](https://public.tableau.com/app/profile/zahra.daniali/viz/HeartAttackDashboard_17163037134360/HeartFailureDashboard?publish=yes)
