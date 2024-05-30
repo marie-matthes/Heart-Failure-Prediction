@@ -25,7 +25,7 @@ def predict_heartdisease(ST_Slope_Flat, ST_Slope_Up, ST_Slope_Down,
 
 def main():
     st.sidebar.title("Heart Failure Classifier")
-    st.sidebar.write("__Authors__: M. Matthes, Z. Daniali  \n[contact](mmatthes@greenbootcamps.com) | [corresponding GitHub repo](https://github.com/marie-matthes/Heart-Failure-Classifier)")
+    st.sidebar.write("__Authors__: M. Matthes, Z. Daniali  \n[contact](mmatthes@greenbootcamps.com) | [corresponding GitHub repo](https://github.com/marie-matthes/Heart-Failure-Prediction)")
     st.sidebar.write("__Is your patient likely to develop a Heart Disease?__ As a health insurance company, you want to find out whether testing a patient for heart disease is necessary or not.")
     st.sidebar.write("__Dataset__ : The Logistic Regression Model was trained on the [Heart Failure Prediction Dataset from Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)")
 
