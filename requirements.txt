@@ -8,3 +8,4 @@ streamlit
 pydot
 xgboost
 plotly
+streamlit_extras
